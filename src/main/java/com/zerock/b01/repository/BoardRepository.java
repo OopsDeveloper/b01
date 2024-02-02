@@ -1,9 +1,10 @@
 package com.zerock.b01.repository;
 
-import com.zerock.b01.domain.Board;
 import org.springframework.data.jpa.repository.JpaRepository;
+import com.zerock.b01.domain.Board;
+import com.zerock.b01.repository.search.BoardSearch;
 
-public interface BoardRepository extends JpaRepository<Board, Long> {
+public interface BoardRepository extends JpaRepository<Board, Long>, BoardSearch {
 
 
 }
