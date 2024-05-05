@@ -56,7 +56,7 @@ public class CustomSecurityConfig {
         // http.formLogin(Customizer.withDefaults());
         http.formLogin(form -> {
 
-            form.loginPage("/member/login");
+            form.loginPage("/");
 
 
         });
@@ -79,7 +79,7 @@ public class CustomSecurityConfig {
         });
 
         http.oauth2Login( httpSecurityOAuth2LoginConfigurer -> {
-            httpSecurityOAuth2LoginConfigurer.loginPage("/member/login");
+            httpSecurityOAuth2LoginConfigurer.loginPage("/");
             httpSecurityOAuth2LoginConfigurer.successHandler(authenticationSuccessHandler());
         });
 

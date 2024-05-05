@@ -50,7 +50,7 @@ public class MemberController {
 
         redirectAttributes.addFlashAttribute("result", "success");
 
-        return "redirect:/member/login"; //회원 가입 후 로그인
+        return "redirect:/"; //회원 가입 후 로그인
     }
 
 
